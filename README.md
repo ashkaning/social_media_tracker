@@ -1,4 +1,4 @@
-# project-manager-webApp
+# Video Subscription App
 This application helps businesses to run their videos through the internet by users subscriptions. This application built on React.js and Node.js.
 To use this application, please follow the steps below:
 * Download the files
