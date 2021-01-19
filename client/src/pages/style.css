@@ -1,0 +1,61 @@
+h1,h2,h3,h4,h5,h6,a{
+    font-family: 'Adamina', serif;
+}
+p,span{
+    font-family: 'Open Sans', sans-serif;
+}
+#popupUpdate{
+    display: none;
+    height: auto;
+    width: 100%;
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+} 
+.topSpacing{
+    /* margin-top: 20px; */
+    margin-bottom: 20px;
+}
+.customDeleteButton{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: red;
+    text-decoration: underline;
+}
+.customEditButton{
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+    text-decoration: underline;
+}
+.editFormCustomClass{
+    display: block;
+    z-index: 999;
+    margin: 0 auto;
+}
+.darkBackgroundOnClick{
+    background-color: rgba(0,0,0,0.7);
+}
+.notActive{
+    color: gray;
+    font-weight: bolder;
+}
+.completed{
+    color:green;
+    font-weight: bolder;
+}.canceled{
+    color: red;
+    font-weight: bolder;
+}
+.waiting{
+    color: blue;
+    font-weight: bolder;
+}
+.serviceTitle{
+    font-weight: bolder;
+    color: #7a2f2f;
+}
+.chat{
+    z-index: 99999;
+}
