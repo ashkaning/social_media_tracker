@@ -12,7 +12,7 @@ p,span{
     background-color: rgba(0,0,0,0.7);
 } 
 .topSpacing{
-    /* margin-top: 20px; */
+    margin-top: 20px;
     margin-bottom: 20px;
 }
 .customDeleteButton{

@@ -6,6 +6,7 @@ import {EmployeeMenu} from './components/Menu';
 /* PAGES */
 import Home from "./pages/Home";
 import AdminVideo from "./pages/AdminVideo";
+import AdminVideoCategory from "./pages/AdminVideoCategory";
 import NoMatch from "./pages/NoMatch";
 
 class App extends Component {
@@ -18,6 +19,7 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home} />
             <Route exact path="/admin-video" component={AdminVideo} />
+            <Route exact path="/admin-video-category" component={AdminVideoCategory} />
             <Route component={NoMatch} />
           </Switch>
         </div>

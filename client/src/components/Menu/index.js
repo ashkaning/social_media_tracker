@@ -18,6 +18,7 @@ export function EmployeeMenu(userId) {
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">All Videos</a>
               <a class="dropdown-item" href="admin-video">Admin Video</a>
+              <a class="dropdown-item" href="admin-video-category">Admin Video Categories</a>
             </div>
           </li>
           <li className="nav-item">
