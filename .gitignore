@@ -1,13 +1,14 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 # dependencies
-/node_modules
 client/node_modules
-/.pnp
-/tmpnodejsnpm=cache
 client/tmpnodejsnpm=cache
-.pnp.js
 client/.eslintcache
 client/debug.log
+client/build
+/node_modules
+/.pnp
+/tmpnodejsnpm=cache
+.pnp.js
 # testing
 /coverage
 # production
