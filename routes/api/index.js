@@ -1,7 +1,7 @@
 const router = require("express").Router();
 
 //const log = require("./log")
-const videoCategory = require("./videocategory")
+const videoCategory = require("./videoCategory")
 const video = require("./video")
 ////////////////////////////////////
 //router.use("/logOut", log)
