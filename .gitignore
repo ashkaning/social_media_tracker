@@ -4,7 +4,6 @@ client/node_modules
 client/tmpnodejsnpm=cache
 client/.eslintcache
 client/debug.log
-client/build
 /node_modules
 /.pnp
 /tmpnodejsnpm=cache
