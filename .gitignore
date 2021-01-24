@@ -6,6 +6,8 @@ client/node_modules
 /tmpnodejsnpm=cache
 client/tmpnodejsnpm=cache
 .pnp.js
+client/.eslintcache
+client/debug.log
 # testing
 /coverage
 # production
