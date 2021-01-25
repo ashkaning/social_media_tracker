@@ -1,61 +1,86 @@
-h1,h2,h3,h4,h5,h6,a{
+h1, h2, h3, h4, h5, h6, a {
     font-family: 'Adamina', serif;
 }
-p,span{
+
+p, span {
     font-family: 'Open Sans', sans-serif;
 }
-#popupUpdate{
+[class*="col-"]{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+#popupUpdate {
     display: none;
     height: auto;
     width: 100%;
     position: absolute;
-    background-color: rgba(0,0,0,0.7);
-} 
-.topSpacing{
-    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.topSpacing {
+    margin-top: 10px;
     margin-bottom: 20px;
 }
-.customDeleteButton{
+
+.customDeleteButton {
     margin-left: 10px;
     font-size: 18px;
     font-weight: bold;
     color: red;
     text-decoration: underline;
 }
-.customEditButton{
+
+.customEditButton {
     margin-left: 10px;
     font-size: 18px;
     font-weight: bold;
     color: blue;
     text-decoration: underline;
 }
-.editFormCustomClass{
+
+.editFormCustomClass {
     display: block;
     z-index: 999;
     margin: 0 auto;
 }
-.darkBackgroundOnClick{
-    background-color: rgba(0,0,0,0.7);
+
+.darkBackgroundOnClick {
+    background-color: rgba(0, 0, 0, 0.7);
 }
-.notActive{
+
+.notActive {
     color: gray;
     font-weight: bolder;
 }
-.completed{
-    color:green;
+
+.completed {
+    color: green;
     font-weight: bolder;
-}.canceled{
+}
+
+.canceled {
     color: red;
     font-weight: bolder;
 }
-.waiting{
+
+.waiting {
     color: blue;
     font-weight: bolder;
 }
-.serviceTitle{
+
+.serviceTitle {
     font-weight: bolder;
     color: #7a2f2f;
 }
-.chat{
+
+.chat {
     z-index: 99999;
+}
+
+.adminVideo {
+    max-width: 100%;
+    height: auto;
+}
+.bottomBorder{
+    border-bottom: 2px solid black;
 }

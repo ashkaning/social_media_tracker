@@ -34,7 +34,7 @@ class AdminVideoCategory extends Component {
         }).then(resultVideoCat => {
             toast.success(resultVideoCat.data.result)
             this.loadVideoCategory()
-        }).catch(toast.error("There is an error while saving category. Please contact administrator (2220)"))
+        }).catch(err => toast.error("There is an error while saving category. Please contact administrator (2220)"))
     }
     loadVideoCategory = () => {
         API.getALlVideoCategory()
@@ -44,7 +44,7 @@ class AdminVideoCategory extends Component {
                 })
                 console.log(this.state.allCategoryNames)
                 toast.success(getALlVideoCategoryResult.data.result)
-            }).catch(toast.error("There is an error while getting categories. Please contact administrator (2221)"))
+            }).catch(err => toast.error("There is an error while getting categories. Please contact administrator (2221)"))
     }
 
     render() {

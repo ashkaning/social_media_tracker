@@ -38,6 +38,8 @@ module.exports = {
                 else {
                     db.Videos.create({
                         videoName: req.body.videoName,
+                        url: req.body.url,
+                        imgURL: req.body.imgURL,
                         videoDescription: req.body.videoDescription,
                         VideoCategoryId: req.body.VideoCategoryId
                     }).then(res.json({ resultSuccess: "The Video Name Saved" }))
@@ -48,11 +50,19 @@ module.exports = {
     },
     allVideos: (req, res) => {
         db.Videos.findAll({
-            include: [{ model: db.VideoCategories, require: true }]
+            include: [{ model: db.VideoCategories, require: true }],
+            order: [['updatedAt', 'DESC']]
         })
             .then(allVideos => {
-               // console.log(allVideos)
+                // console.log(allVideos)
                 res.json(allVideos)
             }).catch(err => console.log(err))
-    }
+    },
+    deleteVideo: function (req, res) {
+        db.Videos.destroy({ where: { id: req.params.id } })
+            .then(resModel => {
+                res.json(resModel);
+            })
+            .catch(err => res.status(422).json(err));
+    },
 }

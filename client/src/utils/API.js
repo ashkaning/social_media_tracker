@@ -14,5 +14,8 @@ export default {
     },
     gettAllVideos: function(){
         return axios.get("/api/video")
+    },
+    deleteVideo: function(deleteVideoId){
+        return axios.delete(`/api/video/${deleteVideoId}`)
     }
 }
