@@ -1,17 +1,29 @@
-module.exports =function (sequelize,DataTypes) {
-    var Videos = sequelize.define("Videos",{
-        videoName:{
+module.exports = function (sequelize, DataTypes) {
+    var Videos = sequelize.define("Videos", {
+        videoName: {
             type: DataTypes.STRING
         },
-        videoDescription:{
-            type:DataTypes.STRING
+        url: {
+            type: DataTypes.STRING,
+            validate: {
+                isUrl: true,
+            }
+        },
+        imgURL: {
+            type: DataTypes.STRING,
+            validate: {
+                isUrl: true,
+            }
+        }, 
+        videoDescription: {
+            type: DataTypes.STRING
         }
     });
-    Videos.associate = function (models){
+    Videos.associate = function (models) {
         Videos.belongsTo(
-            models.VideoCategories,{
+            models.VideoCategories, {
             foreignKey: {
-                allowNull:true
+                allowNull: true
             }
         });
     }
