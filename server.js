@@ -12,6 +12,7 @@ const LocalStrategy = require("passport-local").Strategy;
 /* const GitHubStrategy = require("passport-github2").Strategy; */
 const auth = require("./controllers/loginController");
 
+
 app.use(cors())
 
 
@@ -43,7 +44,7 @@ const sessConfig = {
   }),
   resave: false, // we support the touch method so per the express-session docs this should be set to false
   proxy: false,
-  cookie: { path: '/', httpOnly: true, maxAge: 1000000 }
+  cookie: {   path: '/', httpOnly: true, maxAge: 1000 }
 }
 app.use(session(sessConfig));
 app.use(passport.initialize());

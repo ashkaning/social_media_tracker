@@ -27,6 +27,9 @@ export function EmployeeMenu(userId) {
           <li className="nav-item">
             <a className="nav-link" href="/profile">Profile</a>
           </li>
+          <li className="nav-item">
+            <a className="nav-link" href="/subscription">Subscription</a>
+          </li>
         </ul>
       </div>
     </nav>
