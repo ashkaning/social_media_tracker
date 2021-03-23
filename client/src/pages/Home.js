@@ -8,23 +8,25 @@ import "./style.css"
 
 class Home extends Component {
     state = {
-       
+
     };
-     componentDidMount() {
-        
-     }
+    componentDidMount() {
+
+    }
     handleInputChange = event => {
         const { name, value } = event.target;
         this.setState({
             [name]: value
         });
     };
-  
-     
+
+
     render() {
         return (
             <Container fluid>
-               <p>hi</p>
+                <h1 className="text-center">
+                    Welcome to video subscription plan
+                </h1>
             </Container>
         );
     }
