@@ -1,11 +1,17 @@
 import React from "react";
 import ReactDOM from "react-dom"
-const stripe = require('stripe')(process.env.STRIPE_PUBLIC_KEY);
+import API from "../utils/API";
 
 class Subscription extends React.Component {
 
     handleFormSubmit = (id) => {
-        console.log(id);
+        API.createSession({
+            priceId: id
+        })
+            .then(res => {
+                console.log(res);
+            })
+            .catch(err => console.log(err))
     }
 
     render() {

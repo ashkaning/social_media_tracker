@@ -6,16 +6,19 @@ export default {
     saveVideoCategory: function (names) {
         return axios.post("/api/videoCategory", names)
     },
-    getALlVideoCategory: function(){
+    getALlVideoCategory: function () {
         return axios.get("/api/videoCategory")
     },
-    saveVideo: function(info){
-        return axios.post("/api/video",info)
+    saveVideo: function (info) {
+        return axios.post("/api/video", info)
     },
-    gettAllVideos: function(){
+    gettAllVideos: function () {
         return axios.get("/api/video")
     },
-    deleteVideo: function(deleteVideoId){
+    deleteVideo: function (deleteVideoId) {
         return axios.delete(`/api/video/${deleteVideoId}`)
+    },
+    createSession: function (priceId) {
+        return axios.post("/api/stripe/createSession", priceId)
     }
 }
